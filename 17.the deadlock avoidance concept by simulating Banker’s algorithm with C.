@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+// Define the number of processes and resources
+#define N 5
+#define M 3
+
+// Function to check if the system is in a safe state
+int isSafe(int processes[], int available[], int max[][M], int allocation[][M]) {
+    // Implementation of the safety algorithm
+    // ...
+    // Return 1 if safe, 0 otherwise
+}
+
+int main() {
+    // Initialize data structures (available, max, allocation, need)
+    // ...
+    
+    // Prompt user for resource requests
+    // ...
+    
+    // Check if the requested resources can be allocated safely
+    if (isSafe(processes, available, max, allocation)) {
+        // Allocate the resources
+        // ...
+        printf("Resources allocated safely.\n");
+    } else {
+        printf("Resource allocation would lead to a deadlock. Waiting...\n");
+    }
+    
+    return 0;
+}
